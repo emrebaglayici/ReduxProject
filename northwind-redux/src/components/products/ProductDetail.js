@@ -47,7 +47,7 @@ const ProductDetail = ({ categories, product, onSave, onChange }) => {
         error="Hata"
       />
       <button type="submit" className="btn btn-success">
-        Save
+        Kaydet
       </button>
     </form>
   );
