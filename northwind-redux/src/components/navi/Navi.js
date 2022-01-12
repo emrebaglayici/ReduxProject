@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom"
 import {
   Collapse,
   Navbar,
@@ -27,15 +28,12 @@ export default class Navi extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand><Link to="/saveproduct">Northwind Mağazası</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink><Link to="/saveproduct">Ürün ekle</Link></NavLink>
               </NavItem>
               <CartSummary/>
             </Nav>
