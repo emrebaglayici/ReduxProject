@@ -12,9 +12,9 @@ function App() {
       <Navi />
       <Switch>
         <Route path="/" exact component={Dashboard}/>
-        <Route path="/product" exact component={Dashboard}/>
-        <Route path="/saveproduct:productId" component={AddOrUpdateProduct}/>
-        <Route path="/cart" exact component={CartDetail}/>
+        <Route path="/product" component={Dashboard}/>
+        <Route path="/saveproduct/:productId" component={AddOrUpdateProduct}/>
+        <Route path="/cart" component={CartDetail}/>
         
       </Switch>
     </Container>
