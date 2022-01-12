@@ -43,7 +43,7 @@ function AddOrUpdateProduct({
   );
 }
 export function getProductById(products, productId) {
-  let product = products.find((product) => product.id === product.id) || null;
+  let product = products.find((product) => product.id == productId) || null;
   return product;
 }
 function mapStateToProps(state, ownProps) {
